@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-books-refactor/static/css/main.6f7ea667.chunk.css",
+    "main.js": "/react-books-refactor/static/js/main.5bd16fb8.chunk.js",
+    "main.js.map": "/react-books-refactor/static/js/main.5bd16fb8.chunk.js.map",
+    "runtime-main.js": "/react-books-refactor/static/js/runtime-main.a5a59ae6.js",
+    "runtime-main.js.map": "/react-books-refactor/static/js/runtime-main.a5a59ae6.js.map",
+    "static/css/2.383c0125.chunk.css": "/react-books-refactor/static/css/2.383c0125.chunk.css",
+    "static/js/2.8a28e0d8.chunk.js": "/react-books-refactor/static/js/2.8a28e0d8.chunk.js",
+    "static/js/2.8a28e0d8.chunk.js.map": "/react-books-refactor/static/js/2.8a28e0d8.chunk.js.map",
+    "index.html": "/react-books-refactor/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/react-books-refactor/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.6f7ea667.chunk.css.map": "/react-books-refactor/static/css/main.6f7ea667.chunk.css.map",
+    "static/js/2.8a28e0d8.chunk.js.LICENSE.txt": "/react-books-refactor/static/js/2.8a28e0d8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5a59ae6.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.8a28e0d8.chunk.js",
+    "static/css/main.6f7ea667.chunk.css",
+    "static/js/main.5bd16fb8.chunk.js"
+  ]
+}
