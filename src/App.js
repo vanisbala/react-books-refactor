@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
 import './App.css';
+import React from 'react';
+import Book from './components/Book'
+//import './components/styles.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+  const [data, setData] = useState(null);        
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+      async function getData() {
+          const response = await fetch('./books.json');
+          
+          const json     = await response.json()
+         
+          setData(json);
+          setLoaded(true);
+      }
+      getData();
+  },[])
+  console.log('loaded:', loaded, 'data:', data);
+
+  return (<>
+      <div className="container">
+          <h1> Books </h1>    
+          {loaded && data.books.map((book,i) => <Book data={book} key={i}/>)}
+      </div>        
+  </>);   
 }
-
 export default App;
